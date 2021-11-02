@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #faf9f6;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.hero {
+  margin-bottom: 5rem;
+}
+
+.hero h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero-bold {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero-handwrited {
+  font-family: "Cookie", cursive;
+  font-size: 50px;
+}
+
+.hero-underlined {
+  text-decoration: underline;
+  font-size: 56px;
+  display: block;
+  margin-top: 50px;
+}
+
+.hero-small {
+  font-size: 32px;
+}
+
+.project-img {
+  object-fit: cover;
+  width: 480px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  margin: 1.5rem auto;
+  display: flex;
+  gap: 1rem;
+  max-width: 1020px;
+}
+
+.project-description {
+  align-self: center;
+}
+
+.project-description p {
+  font-size: 32px;
+}
+.project-description h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+  .hero {
+    margin-top: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-handwrited {
+    font-size: 48px;
+  }
+
+  .hero-underlined {
+    font-size: 40px;
+  }
+
+  .hero-small {
+    font-size: 20px;
+  }
+
+  .projects {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project {
+    display: block;
+  }
+
+  body {
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .project-img {
+    object-fit: cover;
+    width: 340px;
+  }
+
+  .project-description p {
+    font-size: 24px;
+  }
+  .project-description h2 {
+    font-size: 32px;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+}
